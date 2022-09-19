@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Accordion {
+  width: 800px;
+  /* height: 400px; */
+  margin-top: 4rem;
+  /* overflow: hidden; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Accordionheader {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 88, 116);
+  color: rgb(136, 36, 98);
+}
+#Accordionheader.active {
+  /* background-color:  aqua; */
+  background-color: rgb(136, 36, 98);
+  color: rgb(255, 88, 116);
+}
+#Accordionheader.active i {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+#Accordionbody {
+  padding: 0 1rem;
+  background-color: gainsboro;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+#Accordionbody.active {
+  max-height: 10rem;
+  padding: 1rem;
+}
